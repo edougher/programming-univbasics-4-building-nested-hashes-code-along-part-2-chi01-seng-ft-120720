@@ -28,8 +28,10 @@ epic_tragedy[:capulet][:heroine][:status] = "dead"
 end
 
 def add_characters(character1, character2)
+  epic_tragedy
   epic_tragedy[:additional_characters][0] = {name: character1}
   epic_tragedy[:additional_characters][1] = {name: character2}
+  
 
 end
 

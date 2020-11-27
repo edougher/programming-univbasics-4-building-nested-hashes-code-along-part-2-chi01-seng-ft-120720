@@ -27,21 +27,8 @@ epic_tragedy[:montague][:hero][:status] = "dead"
 epic_tragedy[:capulet][:heroine][:status] = "dead"
 end
 
-def add_characters(character1, character2)
-  epic_tragedy[:additional_characters] = []
-  epic_tragedy[:additional_characters][0] = {name: character1}
-  epic_tragedy[:additional_characters][1] = {name: character2}
 
 
-end
-
-add_characters("Prince Escalus", "Apothecary")
-
-
-
-  # After your code, the following code will return the altered hash. This method must only return the modified epic_tragedy hash
-  epic_tragedy
-end
 
 def add_characters
    epic_tragedy = {
@@ -72,6 +59,12 @@ def add_characters
    #   - The first hash should have the :name key set to "Prince Escalus"
    #   - The second hash should have the :name key set to "Apothecary"
    # Code your solution here:
+
+   
+
+     epic_tragedy[:additional_characters][0] = {name: "Prince Escalus"}
+     epic_tragedy[:additional_characters][1] = {name: "Apothecary"}
+     
 
 
 
